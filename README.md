@@ -16,16 +16,23 @@ Nx::Yaml.load('./template.yml', { name: 'my-template', description: 'Awesome tem
 
 ## template.yml
 ```yml
-name: <%= name %>
-description: <%= description %>
-version: 1.0.0
+name: nx-yml
+version: 0.1.0
+env: 
+  home: <%= ENV["HOME"] %>
+host: <%= host %>
 ```
 
 <!-- After load -->
-```yml
-name: my-template
-description: Awesome template
-version: 1.0.0
+```rb
+{
+    "name"=>"nx-yml", 
+    "version"=>"0.1.0", 
+    "env"=>{
+        "home"=>"/Users/aric.zheng"
+    }, 
+    "host"=>"0.0.0.0"
+}
 ```
 
 ## build/publish

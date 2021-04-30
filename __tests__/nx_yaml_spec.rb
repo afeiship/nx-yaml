@@ -5,6 +5,7 @@ RSpec.describe Nx do
     it "load yml with hash data" do
       path = File.join(File.dirname(__FILE__), "template_with_var.yml")
       res = Nx::Yaml.load(path, { host: "0.0.0.0" })
+      puts res
       expect(res).to eq(
         "name" => "nx-yml",
         "version" => "0.1.0",
