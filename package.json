@@ -1,6 +1,6 @@
 {
   "name": "nx-yaml",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Nx yaml tools.",
   "directories": {
     "lib": "lib"
