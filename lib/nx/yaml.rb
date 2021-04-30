@@ -19,7 +19,7 @@ module Nx
     def self.load(in_path, in_data = nil)
       raw_content = File.read(in_path)
       str = in_data.nil? ? raw_content : ErbalT::render_from_hash(raw_content, in_data)
-      YAML::load str
+      YAML::load(str, symbolize_names: true)
     end
   end
 end
