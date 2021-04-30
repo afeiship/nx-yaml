@@ -1,0 +1,5 @@
+name: nx-yml
+version: 0.1.0
+env: 
+  home: <%= ENV["HOME"] %>
+host: <%= host %>
