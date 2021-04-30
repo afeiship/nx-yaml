@@ -1,6 +1,6 @@
 {
   "name": "nx-yaml",
-  "version": "1.0.4",
+  "version": "1.0.3",
   "description": "Nx yaml tools.",
   "directories": {
     "lib": "lib"
@@ -8,10 +8,10 @@
   "scripts": {
     "clean": "rm -rf *.gem",
     "test": "rspec __tests__",
-    "prebuild": "yarn version --patch",
+    "patch": "yarn version --patch --no-git-tag-version",
     "build": "gem build *.gemspec",
     "pubpush": "gem push *.gem",
-    "unpublish": "gem yank nx-yaml -v '0.1.0'"
+    "unpublish": "gem yank nx-yaml -v '0.1.3'"
   },
   "repository": {
     "type": "git",
