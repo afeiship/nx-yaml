@@ -26,12 +26,12 @@ host: <%= host %>
 <!-- After load -->
 ```rb
 {
-    "name"=>"nx-yml", 
-    "version"=>"0.1.0", 
-    "env"=>{
-        "home"=>"/Users/aric.zheng"
-    }, 
-    "host"=>"0.0.0.0"
+  name: "nx-yml",
+  version: "0.1.0",
+  env: {
+    home: "/Users/aric.zheng",
+  },
+  host: "0.0.0.0",
 }
 ```
 
